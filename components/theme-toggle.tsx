@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Sun, Moon, Monitor } from "lucide-react";
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -34,8 +35,23 @@ export function ThemeToggle() {
   };
 
   return (
-    <Button variant="ghost" size="icon" className="size-9" onClick={cycleTheme}>
-      {getIcon()}
+    <Button
+      variant="ghost"
+      size="icon"
+      className="size-9 relative overflow-hidden"
+      onClick={cycleTheme}
+    >
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={theme}
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 20, opacity: 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          {getIcon()}
+        </motion.div>
+      </AnimatePresence>
     </Button>
   );
 }

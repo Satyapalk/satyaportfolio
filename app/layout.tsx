@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { LoadingScreen } from "@/components/loading-screen";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,9 +17,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Satya Portfolio",
   description: "Full-stack developer portfolio showcasing my projects and skills",
-  icons: {
-  icon: "/icon.png",
-},
 };
 
 export default function RootLayout({
@@ -34,6 +32,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <LoadingScreen />
           {children}
         </ThemeProvider>
       </body>

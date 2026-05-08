@@ -1,6 +1,7 @@
 import TechGlobe  from "@/components/TechGlobe";
 import Image from "next/image";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { ContactForm } from "@/components/contact-form";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white dark:bg-zinc-900">
@@ -24,7 +25,7 @@ export default function Home() {
             Hi, I'm <span className="text-blue-600">Satya</span>
           </h1>
           <p className="text-xl md:text-2xl text-zinc-600 dark:text-zinc-300 mb-8">
-            Full-Stack Developer & UI/UX Enthusiast
+            Full-Stack Developer & Graphic design
           </p>
           <p className="text-lg text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10">
             I build exceptional digital experiences that are fast, accessible, and visually appealing.
