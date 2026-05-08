@@ -1,3 +1,5 @@
+import TechGlobe  from "@/components/TechGlobe";
+import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white dark:bg-zinc-900">
@@ -56,9 +58,15 @@ export default function Home() {
                 or sharing knowledge with the developer community.
               </p>
             </div>
-            <div className="bg-zinc-200 dark:bg-zinc-700 rounded-2xl h-80 flex items-center justify-center">
-              <span className="text-zinc-500 dark:text-zinc-400 text-lg">Your Photo Here</span>
-            </div>
+<div className="bg-zinc-200 dark:bg-zinc-700 rounded-2xl flex items-center justify-center overflow-hidden">
+  <Image
+    src="https://cdn.discordapp.com/attachments/1036966714694438954/1502196598959116379/Gemini_Generated_Image_.png?ex=69fed51a&is=69fd839a&hm=7f3c47da2dfef37dbab17f7a62b752d30ea40f70853b98334ca9095fd4cafed8&"
+    alt="Discord Image"
+    width={800}
+    height={800}
+    className="object-cover w-full h-full"
+  />
+</div>
           </div>
         </div>
       </section>
@@ -108,18 +116,7 @@ export default function Home() {
       <section id="skills" className="py-20 px-6 bg-zinc-50 dark:bg-zinc-800">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white mb-12 text-center">Skills & Technologies</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              "React", "Next.js", "TypeScript", "JavaScript",
-              "Node.js", "Python", "PostgreSQL", "MongoDB",
-              "Tailwind CSS", "Git", "Docker", "AWS",
-              "REST APIs", "GraphQL", "Figma", "CI/CD"
-            ].map((skill) => (
-              <div key={skill} className="bg-white dark:bg-zinc-900 p-4 rounded-lg text-center font-medium text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700">
-                {skill}
-              </div>
-            ))}
-          </div>
+        <TechGlobe/>
         </div>
       </section>
 
