@@ -131,11 +131,8 @@ export default function Home() {
             <a href="mailto:satya@example.com" className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium">
               satya@example.com
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-zinc-300 dark:border-zinc-600 text-zinc-700 dark:text-zinc-300 rounded-lg hover:border-zinc-900 dark:hover:border-white transition font-medium">
+            <a href="https://github.com/Satyapalk" target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-zinc-300 dark:border-zinc-600 text-zinc-700 dark:text-zinc-300 rounded-lg hover:border-zinc-900 dark:hover:border-white transition font-medium">
               GitHub
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-zinc-300 dark:border-zinc-600 text-zinc-700 dark:text-zinc-300 rounded-lg hover:border-zinc-900 dark:hover:border-white transition font-medium">
-              LinkedIn
             </a>
           </div>
         </div>
