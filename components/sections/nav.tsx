@@ -6,7 +6,7 @@ export function Nav() {
         <div className="hidden md:flex gap-8">
           <a href="#about" className="text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition">About</a>
           <a href="#journey" className="text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition">Journey</a>
-    
+          <a href="#projects" className="text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition">Projects</a>
           <a href="#skills" className="text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition">Skills</a>
           <a href="#contact" className="text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition">Contact</a>
         </div>
